@@ -32,7 +32,7 @@ import androidx.annotation.Px
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.ViewCompat
-import com.example.customunderlinepinview.R
+
 import kotlin.math.abs
 
 
