@@ -1,4 +1,4 @@
-package com.example.customunderlinepinview
+package com.custom.pinview
 
 import android.animation.ValueAnimator
 import android.animation.ValueAnimator.AnimatorUpdateListener
@@ -32,6 +32,7 @@ import androidx.annotation.Px
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.ViewCompat
+import com.example.customunderlinepinview.R
 import kotlin.math.abs
 
 
@@ -660,7 +661,7 @@ class CustomPinView @JvmOverloads constructor(
 
     override fun getDefaultMovementMethod(): MovementMethod {
         // we don't need arrow key.
-        return DefaultMovementMethod.instance!!
+        return CustomMovementMethod.instance!!
     }
 
     /**

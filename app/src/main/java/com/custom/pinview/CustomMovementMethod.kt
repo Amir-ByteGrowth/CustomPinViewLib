@@ -1,4 +1,4 @@
-package com.example.customunderlinepinview
+package com.custom.pinview
 
 import android.text.Selection
 import android.text.Spannable
@@ -7,7 +7,7 @@ import android.view.KeyEvent
 import android.view.MotionEvent
 import android.widget.TextView
 
-internal class DefaultMovementMethod private constructor() : MovementMethod {
+internal class CustomMovementMethod private constructor() : MovementMethod {
     override fun initialize(widget: TextView, text: Spannable) {
         // It will mark the IMM as openable
         Selection.setSelection(text, 0)
@@ -59,12 +59,12 @@ internal class DefaultMovementMethod private constructor() : MovementMethod {
     }
 
     companion object {
-        private var sInstance: DefaultMovementMethod? = null
+        private var sInstance: CustomMovementMethod? = null
 
         val instance: MovementMethod?
             get() {
                 if (sInstance == null) {
-                    sInstance = DefaultMovementMethod()
+                    sInstance = CustomMovementMethod()
                 }
 
                 return sInstance

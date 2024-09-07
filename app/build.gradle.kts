@@ -1,18 +1,18 @@
 plugins {
-    alias(libs.plugins.android.application)
+
     alias(libs.plugins.jetbrains.kotlin.android)
+    id ("com.android.library")
 }
 
+
 android {
-    namespace = "com.example.customunderlinepinview"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.customunderlinepinview"
+
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
