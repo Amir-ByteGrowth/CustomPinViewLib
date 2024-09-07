@@ -9,9 +9,6 @@
 
     <style name="Theme.CustomUnderLinePinView" parent="Base.Theme.CustomUnderLinePinView" />
 
-
-
-
     <style name="PinWidget" />
 
     <style name="PinWidget.PinView" parent="Widget.AppCompat.EditText">
