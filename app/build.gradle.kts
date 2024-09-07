@@ -1,7 +1,7 @@
 plugins {
-
     alias(libs.plugins.jetbrains.kotlin.android)
     id ("com.android.library")
+    id ("maven-publish")
 }
 
 
@@ -12,8 +12,6 @@ android {
 
         minSdk = 24
         targetSdk = 34
-
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
