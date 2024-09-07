@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.example.customunderlinepinview.PinView
+            android:id="@+id/firstPinView"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:hint="Hint."
+            android:inputType="text"
+            android:itemBackground="@mipmap/ic_launcher"
+            android:padding="@dimen/common_padding"
+            android:textColor="@color/text_colors"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/line_selected"
+            app:cursorWidth="2dp"
+            app:itemCount="5"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="0dp"
+            app:itemWidth="48dp"
+            app:lineColor="@color/line_colors"
+            app:lineWidth="2dp"
+            app:viewType="rectangle">
+
+            <requestFocus />
+        </com.example.customunderlinepinview.PinView>
+
+        <com.example.customunderlinepinview.PinView
+            android:id="@+id/secondPinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_padding"
+            android:inputType="number"
+             />
+
+        <com.example.customunderlinepinview.PinView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/underLinePinView"
+            android:padding="@dimen/common_padding"
+            android:textColor="@color/colorAccent"
+            app:hideLineWhenFilled="true"
+            app:itemCount="4"
+            app:viewType="line" />
+
+        <com.example.customunderlinepinview.PinView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:itemBackground="@color/text_default"
+            android:padding="@dimen/common_padding"
+            android:text="您好"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:itemCount="2" />
+
+        <com.example.customunderlinepinview.PinView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:padding="@dimen/common_padding"
+            android:text="12"
+            android:textColor="@color/colorAccent"
+            app:itemCount="1" />
+
+        <com.example.customunderlinepinview.PinView
+
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:hint="Hint."
+            android:inputType="text"
+            android:itemBackground="@mipmap/ic_launcher"
+            android:padding="@dimen/common_padding"
+            android:textColor="@color/text_colors"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/line_selected"
+            app:cursorWidth="2dp"
+            app:itemCount="5"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="0dp"
+            app:itemWidth="48dp"
+            app:lineColor="@color/line_colors"
+            app:lineWidth="2dp"
+            app:viewType="rectangle">
+
+            <requestFocus />
+        </com.example.customunderlinepinview.PinView>
+
+    </LinearLayout>
+
+</ScrollView>
